@@ -1,7 +1,9 @@
 class cups {
 	class {
 		'cups::pkgs':;
-		'cups::config':;
-		'cups::service':;
+		'cups::config':
+			require => Class['cups::pkgs'];
+		'cups::service':
+			require => Class['cups::config'];
 	}
 }
