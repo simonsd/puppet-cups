@@ -5,5 +5,8 @@ class cups::pkgs {
 
 		'gutenprint':
 			ensure => latest;
+
+		'ghostscript':
+			ensure => latest;
 	}
 }
