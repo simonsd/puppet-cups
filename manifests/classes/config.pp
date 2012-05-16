@@ -1,6 +1,6 @@
 class cups::config {
 	file {
-		'cupsd.conf':
+		'/etc/cups/cupsd.conf':
 			ensure => present,
 			owner => root,
 			group => lp,
